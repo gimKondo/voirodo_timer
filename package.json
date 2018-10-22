@@ -1,0 +1,11 @@
+{
+  "name": "voirodo_timer",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^3.0.5",
+    "electron-packager": "^12.2.0"
+  },
+  "author": "gim_kondo",
+  "license": "MIT"
+}
