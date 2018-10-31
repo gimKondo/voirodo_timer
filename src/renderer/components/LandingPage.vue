@@ -1,29 +1,21 @@
 <template>
   <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <main>
       <div class="left-side">
         <span class="title">
-          Welcome to your new project!
+          Achievement
         </span>
-        <system-information></system-information>
+        <div>
+          <img v-for="n in 13" class="vrd-pomodoro" src="~@/assets/tomato_red.png" alt="pomodoro">
+        </div>
       </div>
 
       <div class="right-side">
         <div class="doc">
-          <div class="title">Getting Started</div>
-          <p>
-            electron-vue comes packed with detailed documentation that covers everything from
-            internal configurations, using the project structure, building your application,
-            and so much more.
-          </p>
-          <button @click="open('https://simulatedgreg.gitbooks.io/electron-vue/content/')">Read the Docs</button><br><br>
+          <div class="title">Charactor</div>
+          <img class="vrd-charactor" src="~@/assets/avator.png" alt="pomodoro">
         </div>
-        <div class="doc">
-          <div class="title alt">Other Documentation</div>
-          <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
-          <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
-        </div>
+        <system-information></system-information>
       </div>
     </main>
   </div>
@@ -66,10 +58,12 @@
     width: 100vw;
   }
 
-  #logo {
-    height: auto;
-    margin-bottom: 20px;
-    width: 420px;
+  .vrd-pomodoro {
+    width: 40px;
+  }
+
+  .vrd-charactor {
+    height: 240px;
   }
 
   main {
